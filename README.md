@@ -61,7 +61,32 @@ Now you're ready to start building your n8n community node!
 3. Rename all `Petstore` matches to `YourNode` 
 4. Rename all `petstore` matches to `yournode`
 5. Replace all `devlikeapro` to `{yourgithubname}`
-6. Add your `NPM_TOKEN` in GitHub Actions
-7. Push change
-8. Create a new GitHub Release, `1.0.0` in your project
-9. Install your node in n8n: `@{yourgithubname}/n8n-nodes-{yournode}`
+
+## Test Project Locally
+
+```bash
+npm install
+npm run test
+npm run build
+npm link
+```
+
+Add node to n8n:
+```bash
+cd ~/.n8n
+mkdir -p custom
+cd custom
+npm init # press Enter for all questions
+npm link @devlikeapro/n8n-nodes-petstore
+```
+
+Start n8n:
+```bash
+n8n start
+```
+
+## Publish project
+1. Add your `NPM_TOKEN` in GitHub Actions
+2. Push change
+3. Create a new GitHub Release, `1.0.0` in your project
+4. Install your node in n8n: `@{yourgithubname}/n8n-nodes-{yournode}`
