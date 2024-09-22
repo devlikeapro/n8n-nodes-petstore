@@ -70,7 +70,9 @@ n8n start
 
 ## Add Petstore Node to new workflow
 Find `Petstore` in the node list and add it to your workflow
+
 ![workflow](./images/workflow.png)
+![screenshot](./images/screenshot.png)
 
 # Modify Project
 Now you're ready to start building your n8n community node!
