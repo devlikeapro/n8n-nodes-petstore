@@ -15,7 +15,7 @@ tests:
 
 dev:
 	make clean
-	#make tests
+	make tests
 	make build
 	make link
 	make start
@@ -24,4 +24,4 @@ clean:
 	rm -rf ./dist
 
 up-swagger:
-	wget -qO- http://localhost:3000/-json | jq '.' > ./nodes/WAHA/openapi/openapi.json
+	wget -qO- https://petstore3.swagger.io/api/v3/openapi.json | jq '.' > ./nodes/Petstore/openapi.json
