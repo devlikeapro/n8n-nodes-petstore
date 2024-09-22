@@ -5,6 +5,24 @@
 Example (Template) project for [**Petstore OpenAPI spec**](https://petstore3.swagger.io/)
 using [**devlikeapro/n8n-openapi-node**](https://github.com/devlikeapro/n8n-openapi-node)
 
+![screenshot](./images/screenshot.png)
+
+<!-- toc -->
+
+- [Run Petstore n8n node locally](#run-petstore-n8n-node-locally)
+  * [NodeJS](#nodejs)
+  * [Install n8n](#install-n8n)
+  * [Start n8n](#start-n8n)
+  * [Build and link the project](#build-and-link-the-project)
+  * [Add node to n8n](#add-node-to-n8n)
+  * [Start n8n again](#start-n8n-again)
+  * [Add Petstore Node to new workflow](#add-petstore-node-to-new-workflow)
+- [Modify Project](#modify-project)
+  * [Test Project Locally](#test-project-locally)
+  * [Publish project](#publish-project)
+
+<!-- tocstop -->
+
 # Run Petstore n8n node locally
 Before start modifying the project, we kindly recommend
 to run the Petstore locally.
@@ -52,7 +70,7 @@ n8n start
 
 ## Add Petstore Node to new workflow
 Find `Petstore` in the node list and add it to your workflow
-![screenshot](screenshot.png)
+![workflow](./images/workflow.png)
 
 # Modify Project
 Now you're ready to start building your n8n community node!
