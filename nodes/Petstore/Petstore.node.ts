@@ -10,7 +10,7 @@ export class Petstore implements INodeType {
     description: INodeTypeDescription = {
         displayName: 'Petstore',
         name: 'petstore',
-        icon: 'file:openapi.svg',
+        icon: 'file:icon.svg',
         group: ['transform'],
         version: 1,
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
